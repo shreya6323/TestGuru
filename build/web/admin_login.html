@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href='Images/logo.png' type='image/x-icon'>
+    <link rel='apple-touch-icon' href='Images/logo.png'>
+    <script src='https://unpkg.com/flowbite@1.5.3/dist/flowbite.js'></script>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://kit.fontawesome.com/fdf05f1614.js' crossorigin="anonymous"></script>
+    <style>
+        
+        /* Popup container */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 999; /* Ensure it's on top of other elements */
+}
+
+/* Popup content */
+.popup-content {
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6; /* Add a background color */
+        }
+        
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%; /* Adjust the width as needed */
+            max-width: 400px; /* Set a max-width for larger screens */
+            height: 70%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+    <title>Admin Login</title>
+</head>
+
+<body class="bg-gray-400">
+
+  <script>
+  // Check if the password is set (dummy condition)
+  // Replace this with your condition to check if the password is set
+
+  // Display the popup if the password is set
+  if (request.getAttribute("reset").equals("true")) {
+    openPopup();
+  }
+  
+  function openPopup() {
+  document.getElementById('passwordSetPopup').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('passwordSetPopup').style.display = 'none';
+}
+</script>
+<div id="passwordSetPopup" class="popup-container">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <p>Your password is set!</p>
+  </div>
+</div>
+
+ <div class='rounded-lg shadow dark:border w-1/2 h-9/10 dark:bg-gray-800 dark:border-gray-700 flex items-start'>
+     
+     
+     
+        <div class='px-8 sm:px-8 py-3'>
+            <h1 class='text-xl my-3  mx -3 font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white'>
+                Login
+            </h1>
+            <form class='space-y-4' action='AdminLogin'>
+              
+                <div class='mb-4'>
+                    <label for='Username' class='block mb-2 text-sm font-medium text-gray-900 dark:text-white'>Username</label>
+                    <input type='text' name='Username' id='Username' class=' bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block py-3 px-10 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'  required=''>
+                </div>
+             
+                <div class='mb-4'>
+                    <label for='Password' class='block mb-2 text-sm font-medium text-gray-900 dark:text-white'>Password</label>
+                    <input type='text' name='Password' id='Password' class='bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block py-3  px-10 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'  required=''>
+                </div>
+                
+                 <div class='mb-4'>
+                    <a href='req_email.html' class='text-sm text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300'>Forgot Password?</a>
+                </div>
+
+                <!-- Register Link -->
+                <div class='mb-4'>
+                    <p class='text-sm text-gray-600 dark:text-gray-400'>Don't have an account? 
+                        <a href='admin_register.html' class='text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300'>Register here</a>
+                    </p>
+                </div>
+               
+               <!-- ... (previous code) ... -->
+<button type='submit' class='text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3 text-center dark-bg-blue-600 dark-hover-bg-blue-700 dark-focus-ring-blue-800' style='margin-bottom: 20px;'>Login</button>
+<!-- ... (remaining code) ... -->
+
+            </form>
+           
+        </div>
+       <img src="Images/logo.png" class=" w-1/3 h-1/3 m-12" alt="Testguru Logo">
+  </div>
+</body>
+</html>

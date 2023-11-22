@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="expires" content="0">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+ <script>
+  window.onload = function () {
+    window.history.forward();
+  }
+</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TestGuru</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                flex-direction: column;
+                background-color: #111827;
+                text-align: center;
+
+            }
+
+            .user-button {
+                margin: 10px;
+                cursor: pointer;
+                border: none;
+                background: none;
+                padding: 20px;
+                outline: none;
+                transition: transform 0.2s ease-in-out;
+            }
+
+            .user-button:hover {
+                transform: scale(1.1);
+            }
+
+            .user-label {
+                font-size: 30px;
+                padding:12px;
+                font-family: cursive;
+                color: #fff;
+            }
+
+            .user-button img {
+                width: 250px;
+                height: 250px;
+                border-radius: 70%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                transition: box-shadow 0.2s ease-in-out;
+            }
+
+            .user-button:hover img {
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            }
+
+            /* Styles for the logo link */
+            .playscript-text {
+                font-family: 'Comfortaa', serif;
+                font-size: 44px;
+                color:green;
+                padding-left: 10px;
+            }
+            .rowwise{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div>
+            <div class="rowwise">
+                <img src='Images/logo.png' alt='site-logo' style='width: 70px; height: 70px;'>
+                <p class="playscript-text">TestGuru</p>
+            </div>
+        </div>
+
+        <div class="user-label">Login As:</div>
+
+        <div>
+            <a href="admin_login.html">
+                <button class="user-button">
+                    <img src="Images/admin.png" alt="Admin Image">
+                    <div class="user-label">Admin</div>
+                </button>
+            </a>
+
+            <a href="login.html">
+                <button class="user-button">
+                    <img src="Images/student.png" alt="Student Image">
+                    <div class="user-label">Student</div>
+                </button>
+            </a>
+            <div>
+
+
+                </body>
+                </html>
