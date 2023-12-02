@@ -37,7 +37,7 @@ public class AdminLogin extends HttpServlet {
                     session.setMaxInactiveInterval(5 * 60);
                     response.sendRedirect("admin_home.jsp");
                 } else {
-                    response.sendRedirect("admin_login.jsp?msg=Invalid UserName Or Password");
+                    response.sendRedirect("admin_login.html?msg=Invalid UserName Or Password");
                 }
             }
 

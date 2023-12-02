@@ -10,46 +10,7 @@
     <script src='https://kit.fontawesome.com/fdf05f1614.js' crossorigin="anonymous"></script>
     <style>
         
-        /* Popup container */
-.popup-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 999; /* Ensure it's on top of other elements */
-}
 
-/* Popup content */
-.popup-content {
-  background-color: #fff;
-  width: 300px;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Close button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 
         
         body {
@@ -79,29 +40,9 @@
 
 <body class="bg-gray-400">
 
-  <script>
-  // Check if the password is set (dummy condition)
-  // Replace this with your condition to check if the password is set
+ 
 
-  // Display the popup if the password is set
-  if (request.getAttribute("reset").equals("true")) {
-    openPopup();
-  }
-  
-  function openPopup() {
-  document.getElementById('passwordSetPopup').style.display = 'block';
-}
 
-function closePopup() {
-  document.getElementById('passwordSetPopup').style.display = 'none';
-}
-</script>
-<div id="passwordSetPopup" class="popup-container">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <p>Your password is set!</p>
-  </div>
-</div>
 
  <div class='rounded-lg shadow dark:border w-1/2 h-9/10 dark:bg-gray-800 dark:border-gray-700 flex items-start'>
      

@@ -27,7 +27,7 @@ public class StudentLogin extends HttpServlet {
            if(name != null || password != null)
            {
                db_connection db = new db_connection();
-               String query = "Select * from information_schema.login where username=? and pswd=?";
+               String query = "Select * from information_schema.student_info where sname=? and spassword=?";
                db.pstmt = db.con.prepareStatement(query);
                db.pstmt.setString(1, name);
                db.pstmt.setString(2, password);
@@ -40,7 +40,7 @@ public class StudentLogin extends HttpServlet {
                    HttpSession session = request.getSession();
                    session.setAttribute("Student", name);
                    session.setMaxInactiveInterval(5*60);
-                    RequestDispatcher dispatcher = request.getRequestDispatcher("Student");// here it will not destroy req object unlike sendRedirect and also url will get change on client side while using sendRedirect
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");// here it will not destroy req object unlike sendRedirect and also url will get change on client side while using sendRedirect
     dispatcher.forward(request, response);
   
                }

@@ -1,2 +1,0 @@
-Student.View
-View

@@ -4,19 +4,21 @@
     Author     : shreya gandhi
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="index.jsp" %>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>TestGuru</title>
+      
           <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
           <script src="https://cdn.tailwindcss.com"></script>
           <script src="https://kit.fontawesome.com/fdf05f1614.js" crossorigin="anonymous"></script>
     </head>
-    <body class="bg-gray-400">
-                                  <div class='relative w-full'>
+    <body bg-gray-400>
+        <div>
+                                  <div class='relative'>
+                                     
                                 <div id='toast-success' class='absolute top-5 right-5 flex items-center p-4 mb-4 w-full max-w-xs text-white text-bold bg-green-400 rounded-lg shadow dark:text-gray-400 dark:bg-gray-800' role='alert'>
                                    <div class='inline-flex flex-shrink-0 justify-center items-center w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200'>
                                        <svg aria-hidden='true' class='w-5 h-5' fill='currentColor' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'></path></svg>
@@ -33,6 +35,9 @@
                                   </button>
                                </div>
                               </div>
-                                 <div class='flex justify-center'>
+                                       <div class='flex justify-center'>
+                                         <%@include file="index.jsp" %>
+                                       </div>
+                                               
     </body>
 </html>

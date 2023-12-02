@@ -1,7 +1,7 @@
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="admin_home.html" %>
+<%@include file="admin_home.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>

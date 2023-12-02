@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
-<%@ include file="admin_home.html"%>
+
+<%@ include file="admin_home.jsp"%>
 <%@ page import="QandA.Question" %>
 <!DOCTYPE html>
 <html>

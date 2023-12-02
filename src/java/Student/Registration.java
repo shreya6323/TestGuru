@@ -3,7 +3,6 @@ package Student;
 import DB.db_connection;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -11,13 +10,12 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet(name = "Registration", urlPatterns = {"/Registration"})
 public class Registration extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-
+        System.out.println("jii");
         String email = request.getParameter("email"),
                 sname = request.getParameter("name"),
                 squa = request.getParameter("qua"),
@@ -28,20 +26,21 @@ public class Registration extends HttpServlet {
                 cpassword = request.getParameter("cpswd");
         HttpSession session = request.getSession();
         if (session.getAttribute("Student") != null) {
-            response.sendRedirect("admin_home.jsp");
+            response.sendRedirect("index.jsp");
         }
 
         try {
             if (email != null
-                    || sname != null
-                    || squa != null
-                    || sgender != null
-                    || password != null
-                    || cpassword != null) {
+                    && sname != null
+                    && squa != null
+                    && sgender != null
+                    && password != null
+                    && cpassword != null) {
                 if (password.equals(cpassword)) {
                     db_connection db = new db_connection();
+                    System.out.println("hi");
                     String Query = "insert into information_schema.student_info values(?, ?, ?, ?, ?, ?, ?)";
-                    String Query1 = "insert into information_schema.login values(?, ?, 'Student')";
+
                     db.pstmt = db.con.prepareStatement(Query);
                     db.pstmt.setString(1, email);
                     db.pstmt.setString(2, sname);
@@ -51,15 +50,14 @@ public class Registration extends HttpServlet {
                     db.pstmt.setString(6, scont);
                     db.pstmt.setString(7, password);
                     int i1 = db.pstmt.executeUpdate();
-                    db.pstmt = db.con.prepareStatement(Query1);
-                    db.pstmt.setString(1, sname);
-                    db.pstmt.setString(2, password);
-                    int i2 = db.pstmt.executeUpdate();
-                    if (i1 > 0 && i2 > 0) {
+
+                    if (i1 > 0) {
+                        System.out.println("hi0");
                         session.setAttribute("Student", sname);
                         session.setMaxInactiveInterval(5 * 60);
 
-                        response.sendRedirect("index.jsp");
+                      RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+                        dispatcher.forward(request, response);
 
                     } else {
                         request.setAttribute("msg", "Error !");
@@ -68,11 +66,11 @@ public class Registration extends HttpServlet {
                     }
 
                 } else {
-
-                    response.sendRedirect("Registration.html");
+                     response.sendRedirect("Registration.html");
                 }
 
             }
+            System.out.println("hi80");
         } catch (IOException | SQLException e) {
             System.out.println(e);
             request.setAttribute("msg", "Error !");

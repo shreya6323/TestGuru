@@ -4,29 +4,22 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Admin/AdminLogin.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Student/StudentList.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Student/StudentLogin.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Feedback/View_feed.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/DB/db_connection.java</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/exam.jsp</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/rules.jsp</file>
             <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/admin_home.jsp</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/QandA/DeleteQuestion.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Student/Registration.java</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/Registration.html</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/result.jsp</file>
             <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/QandA/AddQuestion.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/ForgotPassword/send_otp.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Feedback/stu_feedback.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/msg_page.jsp</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Student/UpdateStudent_2.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/QandA/ViewQuestionList.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Admin/AdminRegister.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Student/Student_data.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/ForgotPassword/resetPassword.java</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/certificate.jsp</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/View_feed.jsp</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/dashboard.jsp</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/index.jsp</file>
             <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/QandA/UpdateQuestion.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Student/UpdateStudent.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Feedback/GiveFeedback.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Student/DeleteStudent.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Admin/AdminLogout.java</file>
-            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/QandA/Question.java</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/msg_success.jsp</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/admin_login.html</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/src/java/Exams/submitExam.java</file>
+            <file>file:/C:/Users/shreya%20gandhi/Documents/NetBeansProjects/TestGuru/web/view_ques_list.jsp</file>
         </group>
     </open-files>
 </project-private>

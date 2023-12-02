@@ -37,16 +37,14 @@ public class GiveFeedback extends HttpServlet {
             db.pstmt = db.con.prepareStatement(Query);
             db.pstmt.setString(1, username);
             db.pstmt.setString(2, email);
-            db.pstmt.setString(1, feedback);
+            db.pstmt.setString(3, feedback);
             int a = db.pstmt.executeUpdate();
 
             if (a > 0) {
-                request.setAttribute("msg", "Feedback submitted !");
-                RequestDispatcher dispatcher = request.getRequestDispatcher("student_msg_success.jsp");
-                dispatcher.forward(request, response);
+                response.sendRedirect("index.jsp");
             } else {
                 request.setAttribute("msg", "Error !");
-                RequestDispatcher dispatcher = request.getRequestDispatcher("student_msg_error.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("msg_page.jsp");
                 dispatcher.forward(request, response);
             }
         } catch (SQLException ex) {

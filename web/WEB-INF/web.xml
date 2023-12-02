@@ -2,12 +2,16 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <welcome-file-list>
         <welcome-file>
-            Home.html
+       Home.html
         </welcome-file>
     </welcome-file-list>
     <servlet>
         <servlet-name>StudentDashboard</servlet-name>
         <servlet-class>Student.StudentDashboard</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Registration</servlet-name>
+        <servlet-class>Student.Registration</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Exam</servlet-name>
@@ -125,6 +129,18 @@
         <servlet-name>View_feed</servlet-name>
         <servlet-class>Feedback.View_feed</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>StudentLogout</servlet-name>
+        <servlet-class>Student.StudentLogout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>submitExam</servlet-name>
+        <servlet-class>Exams.submitExam</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>rules</servlet-name>
+        <servlet-class>Exams.rules</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>StudentDashboard</servlet-name>
         <url-pattern>/StudentDashboard</url-pattern>
@@ -148,6 +164,10 @@
     <servlet-mapping>
         <servlet-name>UpdateStudent</servlet-name>
         <url-pattern>/UpdateStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Registration</servlet-name>
+        <url-pattern>/Registration</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ViewQuestionList</servlet-name>
@@ -244,6 +264,18 @@
     <servlet-mapping>
         <servlet-name>View_feed</servlet-name>
         <url-pattern>/View_feed</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentLogout</servlet-name>
+        <url-pattern>/StudentLogout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>submitExam</servlet-name>
+        <url-pattern>/submitExam</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>rules</servlet-name>
+        <url-pattern>/rules</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
